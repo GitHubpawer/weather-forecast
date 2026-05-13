@@ -1,0 +1,212 @@
+.weatherApp {
+  min-height: 100svh;
+  padding: 68px 20px;
+  background: #d6e6f8;
+  color: #111827;
+}
+
+.headerArea {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.appTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 22px;
+}
+
+.titleIcon {
+  color: #0f172a;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.searchRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  width: min(560px, 100%);
+}
+
+.searchInput {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #bfd0e2;
+  background: #f8fbff;
+  color: #111827;
+  font-size: 18px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: #6695ff;
+  box-shadow: 0 0 0 3px rgba(102, 149, 255, 0.25);
+}
+
+.searchButton,
+.unitButton {
+  border: 0;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.searchButton {
+  width: 80px;
+  background: #d3dae3;
+  color: #ffffff;
+}
+
+.searchButton:not(:disabled) {
+  background: #487cf4;
+}
+
+.searchButton:disabled {
+  cursor: not-allowed;
+}
+
+.unitButton {
+  width: 56px;
+  height: 44px;
+  background: #487cf4;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.card {
+  max-width: 660px;
+  margin: 18px auto 0;
+  border-radius: 12px;
+  border: 1px solid #d0dae5;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.07);
+}
+
+.weatherPanel {
+  text-align: left;
+  padding: 20px;
+}
+
+.weatherHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.weatherHeading h2 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.weatherCondition {
+  font-size: 15px;
+  color: #5b6472;
+}
+
+.temperatureValue {
+  margin: 8px 0 20px;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.temperatureValue span {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.weatherStats {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.weatherStats li {
+  border-radius: 10px;
+  background: #f2f7ff;
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.weatherStats span {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.errorPanel,
+.placeholderPanel {
+  padding: 18px;
+}
+
+.errorMessage {
+  margin: 0;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.placeholderMessage {
+  margin: 0;
+  color: #4b5563;
+}
+
+.hooksCard {
+  text-align: left;
+  padding: 18px 20px;
+}
+
+.hooksTitle {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.hooksList {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+@media (max-width: 720px) {
+  .weatherApp {
+    padding-top: 40px;
+  }
+
+  .appTitle {
+    font-size: 34px;
+  }
+
+  .controlsRow {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .searchRow {
+    width: 100%;
+  }
+
+  .unitButton {
+    align-self: center;
+  }
+
+  .weatherStats {
+    grid-template-columns: 1fr;
+  }
+}
