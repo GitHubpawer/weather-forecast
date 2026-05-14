@@ -10,19 +10,23 @@
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+}
+
 .appTitle {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   letter-spacing: 0;
   margin-bottom: 22px;
 }
 
 .titleIcon {
   color: #0f172a;
+  width: 50px;
 }
 
 .controlsRow {
