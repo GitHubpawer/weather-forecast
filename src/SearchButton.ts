@@ -1,0 +1,6 @@
+type  SearchButtonProps {
+    text: string;
+    
+
+
+}
