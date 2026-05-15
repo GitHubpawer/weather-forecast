@@ -1,6 +1,4 @@
-type  SearchButtonProps {
-    text: string;
-    
-
-
+type SearchButtonProps = {
+    disabled: boolean;
+    isLoading: boolean;
 }
