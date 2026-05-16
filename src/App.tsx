@@ -6,10 +6,7 @@ import iconKumo from "./images/iconkumo.svg";
 
 export default function App() {
     const [query, setQuery] = useState('');
-    const [isLoading,setIsLoading] = useState(false);
-    const [isModalOpen,setIsModalOpen] = useState(false);
-    const [weather,setWeather] = useState<WeatherResult | null>(null);
-    const [error,setError] = useState<string | null>(null);
+    
     const handleSubmit = (city: string) => {
         console.log('search city:', city);
     };
